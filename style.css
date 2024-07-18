@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  /* background: #000; */
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color:#1D1A39;
+  padding: 25vh 10vw;
+}
+
+.line {
+  /* background-color: red; */
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 3vw;
+}
+
+#line1-part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+#line1-part1 h5,
+#line1-part1 h6 {
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silk serif";
+}
+
+#line1-part1 h5 {
+  /* background-color: red; */
+  width: 5vw;
+  text-align: right;
+}
+
+.line h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.line h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0;
+  /* animation-name: loaderAnim */
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes loaderAnime {
+  0% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  48% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+
+  100% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 0;
+  }
+}
+
+@keyframes loaderAnime {
+  0% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  48% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+
+  100% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 0;
+  }
+}
+#progress {
+  position: fixed;
+  bottom: 75px;
+  right: 10px;
+  height: 57px;
+  width: 57px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: #001a2e;
+}
+.hero-background {
+  background-image: url("Assets/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  border-image: fill 0 linear-gradient(#0003, #000);
+}
+  
+.wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+
+.itemLeft,
+.itemRight {
+  width: 200px;
+  height: 100px;
+  background-color: #28a271;
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 0px 5px 0px #fdfdfd40;
+  background-image: url("Assets/Rac.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.itemLeft {
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+}
+
+.itemRight {
+  right: max(calc(200px * 8), calc(100% + 200px));
+  animation-name: scrollRight;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.custom-bg {
+    background-color: #f0f0f0;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}

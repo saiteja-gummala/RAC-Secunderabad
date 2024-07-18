@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- style sheet -->
+ 
+    <style>
+        .about-card {
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+       
+    </style>
+</head>
+
+<body style="background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
+
+    <!-- Navigation bar (copied from previous example) -->
+    <nav class="bg-gray-900 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div>
+                <img src="logo1.png" alt="3150 logo" class="h-10">
+            </div>
+            <div>
+                <img src="logo2.png" alt="RAC-SEC logo" class="h-10">
+            </div>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-gray-300">Home</a>
+            <a href="rotractors.html" class="hover:text-gray-300">Our Rotractors</a>
+            <a href="about.html" class="text-red-600 border-b-2 border-red-600">About Our Legacy</a>
+            <a href="#" class="hover:text-gray-300">Our Mission</a>
+            <a href="join.html" class="hover:text-gray-300">Join Us</a>
+            <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Us section -->
+    <section class="container mx-auto py-12 text-black">
+        <div class="max-w-4xl mx-auto p-8 rounded-lg shadow-lg" style="background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); ">
+            <h2 class="text-3xl font-semibold text-center mb-6">About Our Legacy</h2>
+            <div class="space-y-4">
+                <p class="font-bold">Welcome to Rotaract Club of Secunderabad.</p>
+                <p>At Rotaract Secunderabad, we are dedicated to empowering individuals and communities through social service and professional self-development through fellowship. Founded & Charterd in 1968 , our mission is to create positive change by providing the tools and resources necessary for personal growth and community enrichment.</p>
+                <p class="font-bold">Our Mission</p>
+                <p>
+                    Our mission is to inspire and equip individuals to achieve their full potential through a spirit of service within our communities. We believe that by investing in personal development, we can collectively uplift society.</p>
+                <p class="font-bold">Our Values</p>
+                <p> 1 .Empowerment: We empower individuals to take charge of their own growth and contribute meaningfully to society. <br>
+                    2. Compassion: We approach our work with empathy, understanding, and respect for all individuals. <br>
+                    3. Collaboration: We believe in the power of working together to create lasting change.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional: Mobile menu overlay (copied from previous example) -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
+        <div class="flex justify-end p-4">
+            <button id="menu-close" class="text-gray-300 hover:text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center mt-20">
+            <a href="#" class="text-white text-xl py-4 hover:text-gray-300">About Our Legacy</a>
+            <a href="#" class="text-white text-xl py-4 hover:text-gray-300">Join Us</a>
+            <a href="#" class="text-white text-xl py-4 hover:text-gray-300">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- JavaScript for mobile menu (copied from previous example) -->
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

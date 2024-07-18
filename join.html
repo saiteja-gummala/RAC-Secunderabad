@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google poppins Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-slate-900 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div>
+                <img src="logo1.png" alt="Logo 1" class="h-10">
+            </div>
+            <div>
+                <img src="logo2.png" alt="Logo 2" class="h-10">
+            </div>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-gray-300">Home</a>
+            <a href="rotractors.html" class="hover:text-gray-300">Our Rotractors</a>
+            <a href="about.html" class="hover:text-gray-300">About Our Legacy</a>
+            <a href="#" class="hover:text-gray-300">Our Mission</a>
+            <a href="join.html" class="text-red-600 border-b-2 border-red-600">Join Us</a>
+            <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</body>
+</html>
