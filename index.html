@@ -1,192 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <title>RAC-Secunderabad</title>
     <!-- CSS -->
-     <link rel="stylesheet" href="style.css">
-     <!-- Tailwind css cdn link -->
-     <script src="https://cdn.tailwindcss.com"></script>
-     <!-- Google poppins Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google poppins Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
     <div id="loader">
-        <div class="line">
-            <div id="line1-part1">
-                <h6>1968 -</h6>
-                <h5>00</h5>
-            </div>
-            <h1>Rotaract Club</h1>
+      <div class="line">
+        <div id="line1-part1">
+          <h6>1968 -</h6>
+          <h5>00</h5>
         </div>
-        <div class="line">
-            <h1>Of Secunderabad</h1>
-        </div>
-        <div class="line">
-            <h1>Rotaract District</h1>
-            <h2>3150</h2>
-        </div>
+        <h1>Rotaract Club</h1>
+      </div>
+      <div class="line">
+        <h1>Of Secunderabad</h1>
+      </div>
+      <div class="line">
+        <h1>Rotaract District</h1>
+        <h2>3150</h2>
+      </div>
     </div>
     <div id="progress">
-        <span id="progress-value">&#x1F815;</span>
-      </div>
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+     <!-- Fixed WhatsApp and Instagram icons -->
+     <!-- <div class="absolute md:flex hidden left-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center justify-center bg-blue-500 p-2 rounded-md">
+        <a href="#" class="text-gray-900 hover:text-green-500 mb-4">
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/rotaractsecunderabad?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gray-900 hover:text-pink-500">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div> -->
+
     <nav class="bg-slate-900 text-white p-4 flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-            <div>
-                <img src="logo1.png" alt="Logo 1" class="h-10">
-            </div>
-            <div>
-                <img src="logo2.png" alt="Logo 2" class="h-10">
-            </div>
+      <div class="flex items-center space-x-4">
+        <div>
+          <img src="logo1.png" alt="Logo 1" class="h-10" />
         </div>
-        <div class="hidden md:flex space-x-6">
-            <a href="#" class="text-red-600 border-b-2 border-red-600">Home</a>
-            <a href="rotractors.html" class="hover:text-gray-300">Our Rotractors</a>
-            <a href="about.html" class="hover:text-gray-300">About Our Legacy</a>
-            <a href="#" class="hover:text-gray-300">Our Mission</a>
-            <a href="join.html" class="hover:text-gray-300">Join Us</a>
-            <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+        <div>
+          <img src="logo2.png" alt="Logo 2" class="h-10" />
         </div>
-        <div class="md:hidden">
-            <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
-                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="text-red-600 border-b-2 border-red-600">Home</a>
+        <a href="#our-team" class="hover:text-gray-300">Our Rotractors</a>
+        <a href="about.html" class="hover:text-gray-300">About Our Legacy</a>
+        <a href="#mission-values" class="hover:text-gray-300">Our Mission</a>
+        <a href="join.html" class="hover:text-gray-300">Join Us</a>
+        <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+      </div>
+      <div class="md:hidden">
+        <button
+          id="menu-toggle"
+          class="text-gray-300 hover:text-white focus:outline-none"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
     </nav>
 
     <!-- Hero section -->
-    <section class="hero-background flex flex-col items-center justify-center text-center">
-        <p class="text-lg text-white">Welcome to world's 2nd and Asia's first club</p>
-        <h1 class="text-4xl md:text-6xl text-white font-bold mb-4">Rotaract Club Of Secunderabad</h1>
-        <p class="text-lg text-white mb-8">(Sponsered by Rotary Club Of Secunderabad)</p>
-        <div class="flex space-x-4">
-            <a href="join.html" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg">Join Us</a>
-            <a href="about.html" class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg">Know more about us</a>
-        </div>
+    <section
+      class="hero-background flex flex-col items-center justify-center text-center"
+    >
+      <p class="text-lg text-white">
+        Welcome to world's 2nd and Asia's first club
+      </p>
+      <h1 class="text-4xl md:text-6xl text-white font-bold mb-4">
+        Rotaract Club Of Secunderabad
+      </h1>
+      <p class="text-lg text-white mb-8">
+        (Sponsered by Rotary Club Of Secunderabad)
+      </p>
+      <p class="text-lg text-white mb-8">
+        RID 3150 | Club Id: 7575
+      </p>
+      <div class="flex space-x-4">
+        <a
+          href="join.html"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg"
+          >Join Us</a
+        >
+        <a
+          href="about.html"
+          class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg"
+          >Know more about us</a
+        >
+      </div>
     </section>
 
     <!-- Optional: Mobile menu overlay -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
-        <div class="flex justify-end p-4">
-            <button id="menu-close" class="text-gray-300 hover:text-white focus:outline-none">
-                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="flex flex-col items-center mt-20">
-            <a href="index.html" class="text-white text-xl py-4 hover:text-gray-300">Home</a>
-            <a href="rotractors.html" class="text-white text-xl py-4 hover:text-gray-300">Our Rotractora</a>
-            <a href="about.html" class="text-white text-xl py-4 hover:text-gray-300">About Our Legacy</a>
-            <a href="ourmission.html" class="text-white text-xl py-4 hover:text-gray-300">Our Mission</a>
-            <a href="join.html" class="text-white text-xl py-4 hover:text-gray-300">Join Us</a>
-            <a href="contact.html" class="text-white text-xl py-4 hover:text-gray-300">Contact Us</a>
-        </div>
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50"
+    >
+      <div class="flex justify-end p-4">
+        <button
+          id="menu-close"
+          class="text-gray-300 hover:text-white focus:outline-none"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mt-20">
+        <a href="index.html" class="text-red-600 border-b-2 border-b-red-600 text-xl py-4 hover:text-gray-300"
+          >Home</a
+        >
+        <a
+          href="rotractors.html"
+          class="text-white text-xl py-4 hover:text-gray-300"
+          >Our Rotractors</a
+        >
+        <a href="about.html" class="text-white text-xl py-4 hover:text-gray-300"
+          >About Our Legacy</a
+        >
+        <a href="join.html" class="text-white text-xl py-4 hover:text-gray-300"
+          >Join Us</a
+        >
+        <a
+          href="contact.html"
+          class="text-white text-xl py-4 hover:text-gray-300"
+          >Contact Us</a
+        >
+      </div>
     </div>
-    <div class="container mx-auto py-8 bg-[#ffffff]">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- First division -->
-            <div style="background: #C9CCD3;
-            background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
-            background-blend-mode: lighten;" class="bg-white p-6 rounded-lg shadow-lg m-2">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Mission</h3>
-                <p class="text-gray-700">Our mission is to inspire and equip individuals to achieve their full potential through a spirit of service within our communities. We believe that by investing in personal development, we can collectively uplift society.</p>
-            </div>
-            <!-- Second division -->
-            <div style="background: #C9CCD3;
-            background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
-            background-blend-mode: lighten;" class="bg-white p-6 rounded-lg shadow-lg m-2">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Values</h3>
-                <p class="text-gray-700"> 1 .Empowerment: We empower individuals to take charge of their own growth and contribute meaningfully to society. <br>
-                    2. Compassion: We approach our work with empathy, understanding, and respect for all individuals. <br>
-                    3. Collaboration: We believe in the power of working together to create lasting change.</p>
-            </div>
+    <div id="mission-values" class="container mx-auto py-8 bg-[#ffffff]">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- First division -->
+        <div
+          style="
+            background: #c9ccd3;
+            background-image: linear-gradient(
+              -180deg,
+              rgba(255, 255, 255, 0.5) 0%,
+              rgba(0, 0, 0, 0.5) 100%
+            );
+            background-blend-mode: lighten;
+          "
+          class="bg-white p-6 rounded-lg shadow-lg m-2"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Mission</h3>
+          <p class="text-gray-700">
+            Our mission is to inspire and equip individuals to achieve their
+            full potential through a spirit of service within our communities.
+            We believe that by investing in personal development, we can
+            collectively uplift society.
+          </p>
         </div>
+        <!-- Second division -->
+        <div
+          style="
+            background: #c9ccd3;
+            background-image: linear-gradient(
+              -180deg,
+              rgba(255, 255, 255, 0.5) 0%,
+              rgba(0, 0, 0, 0.5) 100%
+            );
+            background-blend-mode: lighten;
+          "
+          class="bg-white p-6 rounded-lg shadow-lg m-2"
+        >
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Values</h3>
+          <p class="text-gray-700">
+            1 .Empowerment: We empower individuals to take charge of their own
+            growth and contribute meaningfully to society. <br />
+            2. Compassion: We approach our work with empathy, understanding, and
+            respect for all individuals. <br />
+            3. Collaboration: We believe in the power of working together to
+            create lasting change.
+          </p>
+        </div>
+      </div>
     </div>
     <div class="container mx-auto py-8">
+      <!-- Division with heading and paragraph -->
+      <div id="our-team" class="max-w-4xl mx-auto bg-white p-8 rounded-lg mb-8">
+        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+          Our Team
+        </h3>
+        <p class="text-gray-700 leading-relaxed">
+          Our dedicated team consists of experienced professionals, passionate
+          volunteers, and community leaders who share a common goal:
+          <b class="text-black">to make a difference</b>. Together, we foster a
+          supportive environment that encourages growth and collaboration.
+        </p>
+      </div>
 
-        <!-- Division with heading and paragraph -->
-        <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mb-8">
-            <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Our Team</h3>
-            <p class="text-gray-700 leading-relaxed">Our dedicated team consists of experienced professionals, passionate volunteers, and community leaders who share a common goal: <b class="text-black">to make a difference</b>. Together, we foster a supportive environment that encourages growth and collaboration.</p>
-        </div>
-
-        <!-- Cards section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-2">
-            <!-- Example card (repeat for each team member) -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden card">
-                <img src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="background-size: cover;" alt="Person 1" class="w-full h-56 object-cover">
-                <div class="p-4">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Sadiq Basha</h4>
-                    <p class="text-gray-700 text-sm mb-2">Immediate Past President</p>
-                    <!-- <p class="text-gray-500 text-sm">Profession:Software Developer</p> -->
-                </div>
-            </div>
-            <!-- Repeat the card structure for each team member -->
-            <!-- Example card (repeat for each team member) -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden card">
-                <img src="https://plus.unsplash.com/premium_photo-1674112877123-c8419badc6a7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Person 2" class="w-full h-56 object-cover">
-                <div class="p-4">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Likitha Nandikanti</h4>
-                    <p class="text-gray-700 text-sm mb-2">Secretary</p>
-                    <!-- <p class="text-gray-500 text-sm">Profession</p> -->
-                </div>
-            </div>
-            <!-- Repeat the card structure for each team member -->
-            <!-- Example card (repeat for each team member) -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden card">
-                <img src="https://images.unsplash.com/photo-1543205089-425bfeaf4d43?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Person 3" class="w-full h-56 object-cover">
-                <div class="p-4">
-                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Pranay</h4>
-                    <p class="text-gray-700 text-sm mb-2">President</p>
-                    <!-- <p class="text-gray-500 text-sm">Profession</p> -->
-                </div>
-            </div>
-        </div>
-
-        <!-- 'Know More' anchor tag -->
-        <div class="text-center mt-8">
-            <a href="rotractors.html" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg">View More</a>
-        </div>
-
-    </div>
-    <div class="bg-zinc-900 mt-[-12px]">
-        <h1 class="text-center text-[#FFFFFF] text-2xl m-3">Photo Gallery</h1>
-        <div class="wrapper">
-            <div class="itemLeft item1"></div>
-            <div class="itemLeft item2"></div>
-            <div class="itemLeft item3"></div>
-            <div class="itemLeft item4"></div>
-            <div class="itemLeft item5"></div>
-            <div class="itemLeft item6"></div>
-            <div class="itemLeft item7"></div>
-            <div class="itemLeft item8"></div>
+      <!-- Cards section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-2">
+        <!-- Example card (repeat for each team member) -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style="background-size: cover"
+            alt="Person 1"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">
+              Sadiq Basha
+            </h4>
+            <p class="text-gray-700 text-sm mb-2">Immediate Past President</p>
+            <!-- <p class="text-gray-500 text-sm">Profession:Software Developer</p> -->
           </div>
-          <div class="wrapper">
-            <div class="itemRight item1"></div>
-            <div class="itemRight item2"></div>
-            <div class="itemRight item3"></div>
-            <div class="itemRight item4"></div>
-            <div class="itemRight item5"></div>
-            <div class="itemRight item6"></div>
-            <div class="itemRight item7"></div>
-            <div class="itemRight item8"></div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card">
+          <img
+            src="https://images.unsplash.com/photo-1543205089-425bfeaf4d43?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Person 3"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">Pranay</h4>
+            <p class="text-gray-700 text-sm mb-2">President</p>
+            <!-- <p class="text-gray-500 text-sm">Profession</p> -->
           </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1674112877123-c8419badc6a7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Person 2"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                Likitha Nandikanti
+              </h4>
+              <p class="text-gray-700 text-sm mb-2">Secretary</p>
+              <!-- <p class="text-gray-500 text-sm">Profession</p> -->
+            </div>
+          </div>
+      </div>
+
+      <!-- 'Know More' anchor tag -->
+      <div class="text-center mt-8">
+        <a
+          href="rotractors.html"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg"
+          >View More</a
+        >
+      </div>
     </div>
-    
-     <!-- gsap cdn  -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-     integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <!-- scroll trigger -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div
+      style="background: linear-gradient(#a9f1df, #ffbbbb)"
+      class="mt-[-12px]"
+    >
+      <h1 class="text-center text-[#000] text-2xl m-3">Our Events Gallery</h1>
+      <div class="wrapper">
+        <div class="itemLeft item1"></div>
+        <div class="itemLeft item2"></div>
+        <div class="itemLeft item3"></div>
+        <div class="itemLeft item4"></div>
+        <div class="itemLeft item5"></div>
+        <div class="itemLeft item6"></div>
+        <div class="itemLeft item7"></div>
+        <div class="itemLeft item8"></div>
+      </div>
+      <div class="wrapper">
+        <div class="itemRight item1"></div>
+        <div class="itemRight item2"></div>
+        <div class="itemRight item3"></div>
+        <div class="itemRight item4"></div>
+        <div class="itemRight item5"></div>
+        <div class="itemRight item6"></div>
+        <div class="itemRight item7"></div>
+        <div class="itemRight item8"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div
+        class="container mx-auto flex flex-col md:flex-col items-center justify-center px-4"
+      >
+      <div class="p-2">
+        <a class="p-2" href="#" class="text-gray-900 hover:text-green-500 mb-4">
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/rotaractsecunderabad?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gray-900 hover:text-pink-500">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+    </div>
+        <div class="mb-4 md:mb-0">
+          <p>&copy; 2024 RAC-Secunderabad. All rights reserved.</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- gsap cdn  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- scroll trigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

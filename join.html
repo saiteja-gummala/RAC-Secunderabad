@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+    <title>Join Us</title>
     <!-- Tailwind css cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google poppins Fonts -->
+    <!-- Google Poppins Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <!-- Fontawesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
-<body>
+
+<body style="background: #0F2027;
+background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+">
     <nav class="bg-slate-900 text-white p-4 flex justify-between items-center">
         <div class="flex items-center space-x-4">
             <div>
@@ -27,7 +39,6 @@
             <a href="index.html" class="hover:text-gray-300">Home</a>
             <a href="rotractors.html" class="hover:text-gray-300">Our Rotractors</a>
             <a href="about.html" class="hover:text-gray-300">About Our Legacy</a>
-            <a href="#" class="hover:text-gray-300">Our Mission</a>
             <a href="join.html" class="text-red-600 border-b-2 border-red-600">Join Us</a>
             <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
         </div>
@@ -40,5 +51,185 @@
             </button>
         </div>
     </nav>
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
+        <div class="flex justify-end p-4">
+            <button id="menu-close" class="text-gray-300 hover:text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center mt-20">
+            <a href="index.html" class="text-white text-xl py-4 hover:text-gray-300">Home</a>
+            <a href="rotractors.html" class="text-white text-xl py-4 hover:text-gray-300">Our Rotractors</a>
+            <a href="about.html" class="text-white text-xl py-4 hover:text-gray-300">About Our Legacy</a>
+            <a href="join.html" class="text-red-600 text-xl py-4">Join Us</a>
+            <a href="contact.html" class="text-white text-xl py-4 hover:text-gray-300">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-8 px-4 flex flex-col md:flex-row">
+        <!-- Left Content (Text) -->
+        <div
+        style="background: #FC354C;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            " class="md:w-1/2 md:pr-8 p-2 rounded-lg md:h-96">
+            <h2 class="text-3xl font-bold text-black mb-4">Get Involved</h2>
+            <p class="text-black mb-4">
+                We invite you to join us in our mission. Whether you're seeking personal development, looking to
+                volunteer, or wanting to collaborate, we welcome you to connect with us. Explore our programs,
+                participate in our events, or reach out to learn more.
+            </p>
+            <p class="text-black mb-4">
+                Thank you for being part of our journey towards empowerment and social change. Together, we can create
+                a brighter future!
+            </p>
+        </div>
+
+        <!-- Right Content (Form) -->
+        <div class="md:w-1/2 md:pl-8">
+            <div
+            style="background: #1f4037;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        " 
+             class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+                <!-- Success message after form submission -->
+                <div id="successMessage" class="hidden mt-4 bg-green-100 border-l-4 border-green-500 text-green-700 p-4">
+                    <p class="font-bold">Form submitted successfully!</p>
+                    <p>We will get in touch with you shortly. <br>
+                    <a href="index.html">Go to Homepage</a></p>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Join Us</h2>
+                <form id="joinForm" class="space-y-4">
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                            required>
+                        <p id="fullNameError" class="text-red-500 text-sm hidden">Please enter your full name.</p>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email *</label>
+                        <input type="email" id="email" name="email"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                            required>
+                        <p id="emailError" class="text-red-500 text-sm hidden">Please enter a valid email address.</p>
+                    </div>
+                    <div>
+                        <label for="contactNumber" class="block text-sm font-medium text-gray-700">Contact Number</label>
+                        <input type="tel" id="contactNumber" name="contactNumber"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+                        <p id="contactNumberError" class="text-red-500 text-sm hidden">Please enter a valid contact number.</p>
+                    </div>
+                    <div>
+                        <label for="whatsappNumber" class="block text-sm font-medium text-gray-700">WhatsApp Number</label>
+                        <input type="tel" id="whatsappNumber" name="whatsappNumber"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="profession" class="block text-sm font-medium text-gray-700">Profession</label>
+                        <input type="text" id="profession" name="profession"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                        <input type="date" id="dob" name="dob"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="findUs" class="block text-sm font-medium text-gray-700">How did you find us?</label>
+                        <input type="text" id="findUs" name="findUs"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="knowAnyone" class="block text-sm font-medium text-gray-700">Do you know anyone from the club?</label>
+                        <input type="text" id="knowAnyone" name="knowAnyone"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+                    </div>
+                    <div>
+                        <label for="expectations" class="block text-sm font-medium text-gray-700">What do you expect to learn while serving the society?</label>
+                        <textarea id="expectations" name="expectations" rows="3"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"></textarea>
+                        <p id="expectationsError" class="text-red-500 text-sm hidden">Please enter your expectations.</p>
+                    </div>
+                    <div>
+                        <button
+                        style="background: #7F7FD5;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    "
+                        type="submit"
+                            class="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md">Join Us</button>
+                    </div>
+                </form>
+                
+        </div>
+
+    <script>
+        // Form submission handling
+        const joinForm = document.getElementById('joinForm');
+        const successMessage = document.getElementById('successMessage');
+
+        joinForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Validate form
+            let valid = true;
+
+            const fullName = document.getElementById('fullName');
+            const email = document.getElementById('email');
+            const contactNumber = document.getElementById('contactNumber');
+            const expectations = document.getElementById('expectations');
+            const fullNameError = document.getElementById('fullNameError');
+            const emailError = document.getElementById('emailError');
+            const contactNumberError = document.getElementById('contactNumberError');
+            const expectationsError = document.getElementById('expectationsError');
+
+            // Reset error messages
+            fullNameError.classList.add('hidden');
+            emailError.classList.add('hidden');
+            contactNumberError.classList.add('hidden');
+            expectationsError.classList.add('hidden');
+
+            if (!fullName.value.trim()) {
+                fullNameError.classList.remove('hidden');
+                valid = false;
+            }
+
+            if (!/\S+@\S+\.\S+/.test(email.value)) {
+                emailError.classList.remove('hidden');
+                valid = false;
+            }
+
+            // Optional: Add custom validation for contactNumber, expectations, etc.
+            // Example: Validate contactNumber (optional)
+            // if (contactNumber.value && !/^\d{10}$/.test(contactNumber.value)) {
+            //     contactNumberError.classList.remove('hidden');
+            //     valid = false;
+            // }
+
+            if (!expectations.value.trim()) {
+                expectationsError.classList.remove('hidden');
+                valid = false;
+            }
+
+            if (valid) {
+                // Simulate form submission (replace with actual form submission code)
+                setTimeout(() => {
+                    // Show success message
+                    successMessage.classList.remove('hidden');
+                    // Reset form
+                    joinForm.reset();
+                    // Scroll to top of the page
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 500); // Delay added for demonstration purposes
+            }
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>

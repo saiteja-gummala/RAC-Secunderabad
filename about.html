@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <title>About Us</title>
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -11,7 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!-- style sheet -->
+
+      <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
  
     <style>
         .about-card {
@@ -42,7 +46,6 @@
             <a href="index.html" class="hover:text-gray-300">Home</a>
             <a href="rotractors.html" class="hover:text-gray-300">Our Rotractors</a>
             <a href="about.html" class="text-red-600 border-b-2 border-red-600">About Our Legacy</a>
-            <a href="#" class="hover:text-gray-300">Our Mission</a>
             <a href="join.html" class="hover:text-gray-300">Join Us</a>
             <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
         </div>
@@ -55,6 +58,24 @@
             </button>
         </div>
     </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
+        <div class="flex justify-end p-4">
+            <button id="menu-close" class="text-gray-300 hover:text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center mt-20">
+            <a href="index.html" class="text-white text-xl py-4 hover:text-gray-300">Home</a>
+            <a href="rotractors.html" class="text-white text-xl py-4 hover:text-gray-300">Our Rotractors</a>
+            <a href="about.html" class="text-red-600 border-b-2 border-b-red-600 text-xl py-4">About Our Legacy</a>
+            <a href="join.html" class="text-white text-xl py-4 hover:text-gray-300">Join Us</a>
+            <a href="contact.html" class="text-white text-xl py-4 hover:text-gray-300">Contact Us</a>
+        </div>
+    </div>
 
     <!-- About Us section -->
     <section class="container mx-auto py-12 text-black">
@@ -90,6 +111,24 @@
             <a href="#" class="text-white text-xl py-4 hover:text-gray-300">Contact Us</a>
         </div>
     </div>
+    <footer class="bg-gray-900 text-white py-8">
+        <div
+          class="container mx-auto flex flex-col md:flex-col items-center justify-center px-4"
+        >
+        <div class="p-2">
+          <a class="p-2" href="#" class="text-gray-900 hover:text-green-500 mb-4">
+              <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/rotaractsecunderabad?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+      </div>
+          <div class="mb-4 md:mb-0">
+            <p>&copy; 2024 RAC-Secunderabad. All rights reserved.</p>
+          </div>
+  
+        </div>
+      </footer>
 
     <!-- JavaScript for mobile menu (copied from previous example) -->
     <script>
