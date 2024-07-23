@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <title>About Us</title>
     <!-- Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,34 +30,44 @@
     </style>
 </head>
 
-<body style="background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
+<body style="background-color:#D91B5B;">
 
     <!-- Navigation bar (copied from previous example) -->
-    <nav class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <nav class="bg-slate-900 text-black p-4 flex justify-between items-center">
         <div class="flex items-center space-x-4">
-            <div>
-                <img src="logo1.png" alt="3150 logo" class="h-10">
-            </div>
-            <div>
-                <img src="logo2.png" alt="RAC-SEC logo" class="h-10">
-            </div>
+          <div>
+            <img src="Assets/RAC SEC White.png" alt="Logo 1" class="w-[38vw] md:w-[16vw]" />
+          </div>
+          <!-- <div>
+            <img src="logo2.png" alt="Logo 2" class="h-10" />
+          </div> -->
         </div>
-        <div class="hidden md:flex space-x-6">
-            <a href="index.html" class="hover:text-gray-300">Home</a>
-            <a href="rotractors.html" class="hover:text-gray-300">Our Rotractors</a>
-            <a href="about.html" class="text-red-600 border-b-2 border-red-600">About Our Legacy</a>
-            <a href="join.html" class="hover:text-gray-300">Join Us</a>
-            <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+        <div class="hidden md:flex space-x-6 text-white">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="rotractors.html" class="hover:text-gray-300">Our Rotractors</a>
+          <a href="about.html" class="text-red-600 border-b-2 border-red-600">About Our Legacy</a>
+          <a href="join.html" class="hover:text-gray-300">Join Us</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
         </div>
         <div class="md:hidden">
-            <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
-                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+          <button
+            id="menu-toggle"
+            class="text-gray-300 hover:text-white focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
-    </nav>
+      </nav>
 
     <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
         <div class="flex justify-end p-4">
