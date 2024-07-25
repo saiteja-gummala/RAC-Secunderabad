@@ -20,6 +20,17 @@
             font-family: "Poppins", sans-serif;
         }
     </style>
+    <!-- Email.js script -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "gJA6RumlCCdmW-9YQ",
+  });
+})();
+</script>
 </head>
 
 <body style="background-color: #D91B5B;">
@@ -155,7 +166,7 @@
                     </div>
                     <div>
                         <button
-                        
+                        onclick="joinUs()"
                         type="submit"
                             class="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md">Join Us</button>
                     </div>
@@ -183,7 +194,7 @@
             const contactNumberError = document.getElementById('contactNumberError');
             const expectationsError = document.getElementById('expectationsError');
 
-            // Reset error messages
+           
             fullNameError.classList.add('hidden');
             emailError.classList.add('hidden');
             contactNumberError.classList.add('hidden');
@@ -199,12 +210,7 @@
                 valid = false;
             }
 
-            // Optional: Add custom validation for contactNumber, expectations, etc.
-            // Example: Validate contactNumber (optional)
-            // if (contactNumber.value && !/^\d{10}$/.test(contactNumber.value)) {
-            //     contactNumberError.classList.remove('hidden');
-            //     valid = false;
-            // }
+         
 
             if (!expectations.value.trim()) {
                 expectationsError.classList.remove('hidden');
@@ -212,19 +218,16 @@
             }
 
             if (valid) {
-                // Simulate form submission (replace with actual form submission code)
                 setTimeout(() => {
-                    // Show success message
-                    successMessage.classList.remove('hidden');
-                    // Reset form
                     joinForm.reset();
-                    // Scroll to top of the page
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 500); // Delay added for demonstration purposes
+                    window.location.href = 'index.html'
+                }, 3000); 
             }
+            
         });
     </script>
     <script src="script.js"></script>
+    <script src="joinUs.js"></script>
 </body>
 
 </html>

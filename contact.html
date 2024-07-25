@@ -41,6 +41,17 @@
             z-index: 100;
         }
     </style>
+    <!-- Email.js script -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "gJA6RumlCCdmW-9YQ",
+  });
+})();
+</script>
 </head>
 
 <body style="background-color: #D91B5B;">
@@ -114,7 +125,7 @@
                     <p id="messageError" class="text-red-500 text-sm hidden">Please enter your message.</p>
                 </div>
                 <div>
-                    <button type="submit"
+                    <button onclick="sendMail()" type="submit"
                         class="bg-blue-500 hover:bg-blue-600 w-full text-white px-6 py-3 rounded-md">Submit</button>
                 </div>
             </form>
@@ -199,7 +210,7 @@
         });
     </script>
     <script src="script.js"></script>
-
+<script src="contactscript.js"></script>
 </body>
 
 </html>
